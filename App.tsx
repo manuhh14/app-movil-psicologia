@@ -2,8 +2,8 @@ import './gesture-handler';
 
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import {Text,View,} from 'react-native';
-import { StackNavigator } from './src/navegation/StackNavigation';
+
+import { MyDrower } from './src/navegation/MenuDrawer';
 ;
 
 
@@ -12,7 +12,8 @@ function App(){
 
   return (
     <NavigationContainer>
-       <StackNavigator/>
+     
+      <MyDrower/>
     </NavigationContainer>
   );
 }

@@ -7,9 +7,11 @@ import { createDrawerNavigator,
 
 import { RegistroScree } from "../screens/RegistroScree";
 import { StackNavigator } from "./StackNavigation";
-import { HomeScreen } from "./HomeScreen";
+import { HomeScreen } from "../screens/HomeScreen";
 import { globalColors } from "../theme/theme";
 import { useWindowDimensions, View } from "react-native";
+import { AgendaScreen } from "../screens/AgendaScreen";
+import { ExpedientesScreen } from "../screens/ExpedientesScreen";
 
 const Drawer= createDrawerNavigator();
 
@@ -42,6 +44,8 @@ export const MyDrower= ()=>{
             <Drawer.Screen name="StackNavigator" component={StackNavigator}/>
             <Drawer.Screen name="Home" component={HomeScreen}/>
             <Drawer.Screen name="Registro" component={RegistroScree}/>
+            <Drawer.Screen name="Agenda" component={AgendaScreen}/>
+            <Drawer.Screen name="Expedientes" component={ExpedientesScreen}/>
         </Drawer.Navigator>
 
     );

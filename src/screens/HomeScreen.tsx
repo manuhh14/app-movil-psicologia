@@ -1,7 +1,7 @@
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import React, { useEffect } from 'react'
 import { Pressable, Text, View } from 'react-native'
-import { RootStackParams } from './StackNavigation';
+import { RootStackParams } from '../navegation/StackNavigation';
 import { globalStyles } from '../theme/theme';
 import { PrimaryButton } from '../components/shared/PrimaryButton';
 
